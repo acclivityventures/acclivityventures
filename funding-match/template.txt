@@ -1,0 +1,27 @@
+Dear {{firstName}},
+
+Each month we check the open funding calls against the companies we follow. This month one call stands out for {{companyName}}, and I wanted you to see it before the deadline.
+
+{{funder}}: {{call_name}}
+Award: {{award}}
+{{deadline_label}}: {{deadline}}
+Who can apply: {{who_can_apply}}
+Co-funding: {{cofunding}}
+Call page: {{call_url}}
+
+Why this fits {{companyName}}
+- {{why_1}}
+- {{why_2}}
+- {{why_3}}
+
+If calls like this are useful, our free portal sends you the ones that fit your company as they open: www.acclivityventures.co.uk/funding-tracker
+
+Or reply MATCH and I will send you the eligibility checklist and an outline of what the application needs.
+
+Best regards,
+Flavia Richardson
+Acclivity Ventures
+www.acclivityventures.co.uk
+
+You are receiving this because {{companyName}} works in {{sector_phrase}}, one of the areas we track for open funding. We send at most one match a month, and only when a call fits. To stop these emails, reply "unsubscribe" and you will not hear from us again.
+Acclivity Ventures, 71-75 Shelton Street, Covent Garden, London WC2H 9JQ
