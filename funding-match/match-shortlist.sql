@@ -35,7 +35,8 @@ from contact_register c
 where c.sector in ('AI/Semiconductors/Robotics','Life Sciences','Defence & Dual-Use')
   and coalesce(c.audience_type,'company') = 'company'
   and not coalesce(c.suppressed,false)
-  and c.reoon_status in ('safe','valid')
+  and c.reoon_status = 'safe'
+  and c.validation_status = 'verified'
   and coalesce(c.first_name,'') <> '' and coalesce(c.company,'') <> ''
   and not exists (select 1 from suppressed_emails se where lower(se.email) = lower(c.email))
   and not exists (select 1 from suppressed_domains sd where lower(sd.domain) = lower(c.email_domain))

@@ -6,7 +6,7 @@ Files in this folder: template.html and template.txt (the approved email, Instan
 ## Standing rules (never break)
 - One email per company per month, and only when a call genuinely fits. No match, no send. Never send the same call to the same company twice.
 - Send only from the Flavia Richardson Instantly inboxes, never from flavia@acclivityventures.co.uk. Maximum 30 emails per inbox per day. Single step, no automatic follow-ups.
-- Verified addresses only (contact_register.reoon_status safe or valid). Exclude suppressed contacts, suppressed_emails, suppressed_domains, the Instantly blocklist, investors, academic, public and personal addresses, current clients and open CRM deals, and anyone in another live Instantly sequence this month.
+- Verified and valid addresses only: contact_register.reoon_status = 'safe' AND validation_status = 'verified', checked again immediately before every load. Never load catch_all, unknown, role_account, inbox_full, invalid, bounced or unchecked addresses, and never anything in suppressed_emails (which holds the 3,561 addresses Reoon marked invalid on 14 Nov 2026). Exclude suppressed contacts, suppressed_emails, suppressed_domains, the Instantly blocklist, investors, academic, public and personal addresses, current clients and open CRM deals, and anyone in another live Instantly sequence this month.
 - Never reply to negative or do-not-contact replies: blocklist them in Instantly and add them to suppressed_emails.
 - UK English. No em dashes or en dashes anywhere. Subject always starts "Acclivity Ventures".
 - Every fact in an email (deadline, award, eligibility) must match the official call page. If a deadline cannot be verified, drop that call.
@@ -15,7 +15,7 @@ Files in this folder: template.html and template.txt (the approved email, Instan
 
 ## Data
 - Website database: the Lovable website project (ID in the scheduled task), read with Lovable query_database (SELECT only).
-- Audience: contact_register, sectors 'AI/Semiconductors/Robotics', 'Life Sciences', 'Defence & Dual-Use' (about 1,365 sendable companies on 14 Nov 2026). Most rows have no country and no company description, so enrichment is needed before matching.
+- Audience (verified and valid only, see standing rules): contact_register, sectors 'AI/Semiconductors/Robotics', 'Life Sciences', 'Defence & Dual-Use' (about 1,365 sendable companies on 14 Nov 2026). Most rows have no country and no company description, so enrichment is needed before matching.
 - Calls: grants table, shortlisted by match-shortlist.sql (deadline 21 to 120 days out, UK or Europe, company-eligible, quality score 80+).
 - History: previous "Funding Match" campaigns in Instantly. Each lead carries custom variable call_id; check it before reusing a call for a company.
 
