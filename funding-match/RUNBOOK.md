@@ -1,7 +1,7 @@
 # Funding Match programme: monthly runbook
 
 Owner: Flavia Richardson, Acclivity Ventures. Plan: https://claude.ai/artifact/UpWwoFXjZEUG45ttVio5Ea
-Files in this folder: template.html and template.txt (the approved email, Instantly merge fields), match-shortlist.sql (call shortlist and audience queries), example-variable-robotics.html (the approved test, 14 Nov 2026).
+Files in this folder: template.html and template.txt (the approved email, Instantly merge fields), match-shortlist.sql (call shortlist and audience queries).
 
 ## Standing rules (never break)
 - One email per company per month, and only when a call genuinely fits. No match, no send. Never send the same call to the same company twice.
@@ -14,7 +14,7 @@ Files in this folder: template.html and template.txt (the approved email, Instan
 - The design is fixed: logo mark alone on a light header (no wordmark), website colours (paper #FAF6EE, cobalt #1500A0, teal #0D8A6E, ink #1A1D24, footer #1A2236). Do not restyle it.
 
 ## Data
-- Website database: Lovable project 3e52fbdd-f3b0-414f-96bf-3a7aa5c29214, read with Lovable query_database (SELECT only).
+- Website database: the Lovable website project (ID in the scheduled task), read with Lovable query_database (SELECT only).
 - Audience: contact_register, sectors 'AI/Semiconductors/Robotics', 'Life Sciences', 'Defence & Dual-Use' (about 1,365 sendable companies on 14 Nov 2026). Most rows have no country and no company description, so enrichment is needed before matching.
 - Calls: grants table, shortlisted by match-shortlist.sql (deadline 21 to 120 days out, UK or Europe, company-eligible, quality score 80+).
 - History: previous "Funding Match" campaigns in Instantly. Each lead carries custom variable call_id; check it before reusing a call for a company.

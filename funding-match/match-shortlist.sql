@@ -1,4 +1,4 @@
--- Funding Match: monthly call shortlist (website Supabase, Lovable project 3e52fbdd-f3b0-414f-96bf-3a7aa5c29214)
+-- Funding Match: monthly call shortlist (website database)
 -- Up to 10 company-eligible calls per programme sector, deadline 21 to 120 days out.
 with g as (
   select id, name, funder, award, deadline_parsed, deadline_kind, region, country, applicant_type, eligibility,
